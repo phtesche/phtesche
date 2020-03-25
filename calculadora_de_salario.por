@@ -8,8 +8,8 @@ programa
 		 * Se voce quiser saber quanto sairia por mes 
 		 * ou quanto seria esse salario em R$ ao inves de U$
 		 */
-		inteiro diasemana = 6, mes = 26, op, horaextra, heporcento, salariohe, vreal = 5
-		real cargahoraria, valorhora = 0.0, salario, salariomes, salariobr, salariobrm, horaex = 0.0, horadia, valordia, trabalhodia
+		inteiro diasemana = 6, mes = 26, op, horaextra, heporcento, salariohe, vreal = 5, cargahoraria
+		real valorhora = 0.0, salario = 0.0, salariomes = 0.0, salariobr = 0.0, salariobrm, horaex = 0.0, horadia = 0.0, valordia = 0.0, trabalhodia= 0.0
 
 		escreva("\n**********************************************")
 		escreva("\n* BEM VINDO A FERRAMENTA DE CALCULO SALARIAL *\n")
@@ -28,9 +28,9 @@ programa
 			trabalhodia = cargahoraria / diasemana
 			valordia = trabalhodia * valorhora
 			salario = valordia * diasemana
-			salariomes = salario * mes
+			salariomes = valordia * mes
 			escreva("\n Seu salario semanal será de U$: ",salario, " totalizando U$: ", salariomes, " por mês.\n")
-			escreva("\n Seu salario no brasil seria de R$: ",(salariomes*vreal))
+			escreva("\n Seu salario no brasil seria de R$: ",(salariomes*vreal),"\n")
 			pare
 		caso 2:
 			escreva("\n Informe o valor do salario em U$: ")
@@ -77,7 +77,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2183; 
+ * @POSICAO-CURSOR = 1307; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
