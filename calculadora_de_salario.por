@@ -15,8 +15,12 @@ programa
 		escreva("\n* BEM VINDO A FERRAMENTA DE CALCULO SALARIAL *\n")
 		escreva("**********************************************\n")
 		faca {
-			escreva("\n Escolha uma opção \n")
-			escreva("\n 1.Calcular Salario por hora || 2.Converter Salario em R$ || 3.Calcular HE || 0.Sair: ")
+			
+			escreva("\n 1.Calcular Salario por hora")
+			escreva("\n 2.Converter Salario em R$")
+			escreva("\n 3.Calcular HE")
+			escreva("\n 0.Sair")
+			escreva("\n Escolha uma opção: ")
 			leia(op)
 			
 		escolha(op) {
@@ -36,7 +40,7 @@ programa
 			escreva("\n Informe o valor do salario em U$: ")
 			leia(salario)
 			salariobr = salario * vreal
-			escreva("\n O seu salario convertido em reais seria de R$:", salariobr)
+			escreva("\n O seu salario convertido em reais seria de R$:", salariobr,"\n")
 			pare
 		caso 3:
 			escreva("\n Informe o as horas trabalhadas: ")
@@ -49,7 +53,7 @@ programa
 			horaextra = cargahoraria - 40
 			salariohe = horaextra*valorhora
 			escreva("\n Seu salario com hora extra vai será U$: ", (salario+salariohe)"\n")
-			escreva("\n Você realizou ", horaextra," horas a mais da sua jornada semanal!")
+			escreva("\n Você realizou ", horaextra," horas a mais da sua jornada semanal!\n")
 			pare
 		caso 0:
 			escreva("\n**********************************************")
@@ -77,7 +81,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1307; 
+ * @POSICAO-CURSOR = 2256; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
