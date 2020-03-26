@@ -21,18 +21,19 @@ programa
 	}	
 
 	funcao resultado(real montante) {
-		escreva("|----------Resultado---------------------------|")
-		escreva("\n|Capital R$ ", mat.arredondar(capital, 2)"   |")
+		escreva("|----------Resultado-------------------------|")
+		escreva("\n|Capital R$ ", mat.arredondar(capital, 2),"                              |")
 		real juros = calcularJuros(montante)
-		escreva("\n|Juros R$ ", mat.arredondar(juros, 2)"       |")
-		escreva("\n|Montante R$ ", mat.arredondar(montante, 2)" |\n")
+		escreva("\n|Juros R$ ", mat.arredondar(juros, 2),"                               |")
+		escreva("\n|Montante R$ ", mat.arredondar(montante, 2),"                            |")
 		escreva("\n|____________________________________________|\n")
 	}
 
 	funcao caracter menu() {
 		escreva("\n")
 		escreva("|------------------------------|\n")
-		escreva("|------Calculadora de Juros----|\n")
+		escreva("|-----|Calculadora de Juros|---|\n")
+		escreva("|------------------------------|\n")
 		escreva("|1. Juros simples ao Mês       |\n")
 		escreva("|2. Juros simples ao Ano       |\n")
 		escreva("|3. Juros Compostos            |\n")
@@ -98,7 +99,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1387; 
+ * @POSICAO-CURSOR = 878; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
